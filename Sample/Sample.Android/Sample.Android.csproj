@@ -89,6 +89,7 @@
     <ProjectReference Include="..\..\Xamarin.Forms.QrScanner\Xamarin.Forms.QrScanner.csproj">
       <Project>{d2f7a44b-85f3-4038-8cde-d0ebc3f5e9fe}</Project>
       <Name>Xamarin.Forms.QrScanner</Name>
+      <IsAppExtension>false</IsAppExtension>
     </ProjectReference>
     <ProjectReference Include="..\Sample\Sample.csproj">
       <Project>{88B43500-305B-4C47-AA34-2145F954FA3B}</Project>

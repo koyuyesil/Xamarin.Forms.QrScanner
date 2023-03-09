@@ -80,7 +80,7 @@ namespace Xamarin.Forms.Controls
             if (Control == null)
             {
                 var detector = new BarcodeDetector.Builder(Context)
-                    .SetBarcodeFormats(BarcodeFormat.QrCode)
+                    .SetBarcodeFormats(BarcodeFormat.AllFormats)
                     .Build();
 
                 detector.SetProcessor(this);
