@@ -40,7 +40,8 @@ namespace Xamarin.Forms.Controls
         {
             foreach (var m in metadataObjects)
             {
-                if (m is AVMetadataMachineReadableCodeObject result && result.Type == AVMetadataObjectType.QRCode)
+                //if (m is AVMetadataMachineReadableCodeObject result && result.Type == AVMetadataObjectType.QRCode)
+                if (m is AVMetadataMachineReadableCodeObject result)
                 {
                     if (Element?.IsScanning == true)
                         Element?.Result?.Execute(result.StringValue);
