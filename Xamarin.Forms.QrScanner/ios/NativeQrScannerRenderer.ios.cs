@@ -114,19 +114,7 @@ namespace Xamarin.Forms.Controls
                 session.AddOutput(output);
 
                 output.SetDelegate(this, DispatchQueue.MainQueue);
-                output.MetadataObjectTypes |= AVMetadataObjectType.AztecCode;
-                output.MetadataObjectTypes |= AVMetadataObjectType.Code39Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.Code39Mod43Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.Code93Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.Code128Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.DataMatrixCode;
-                output.MetadataObjectTypes |= AVMetadataObjectType.EAN8Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.EAN13Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.Interleaved2of5Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.ITF14Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.PDF417Code;
-                output.MetadataObjectTypes |= AVMetadataObjectType.QRCode;
-                output.MetadataObjectTypes |= AVMetadataObjectType.UPCECode;
+                output.MetadataObjectTypes = output.AvailableMetadataObjectTypes;
 
                 preview = new AVCaptureVideoPreviewLayer(session);
                 preview.VideoGravity = AVLayerVideoGravity.ResizeAspectFill;
